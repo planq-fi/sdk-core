@@ -124,6 +124,14 @@ const AVALANCHE_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE'
 }
 
+const PLANQ_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x43D238E8FEA3671b8468De6b11B6c1fA0ea4Be1c',
+  multicallAddress: '0x4bbe4241067e824201CA2567C6CBCE1ABfbB84F8',
+  quoterAddress: '0xF2cF00D0d9c0BAbA77C5662379923bA466C8ec0E',
+  nonfungiblePositionManagerAddress: '0xeC264bbFBdf4FF27A2685e8996444fD9d430C7A7',
+  tickLensAddress: '0xc752f9f89C1E3e735B96d5d1D85e320FcB3f8729'
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -137,7 +145,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.OPTIMISM_GOERLI]: OPTIMISM_GOERLI_ADDRESSES,
   [ChainId.ARBITRUM_GOERLI]: ARBITRUM_GOERLI_ADDRESSES,
   [ChainId.SEPOLIA]: SEPOLIA_ADDRESSES,
-  [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES
+  [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
+  [ChainId.PLANQ]: PLANQ_ADDRESSES
 }
 
 /* V3 Contract Addresses */
